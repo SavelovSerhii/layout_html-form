@@ -1,1 +1,23 @@
 /* styles go here */
+.top {
+  margin-bottom: 10px;
+  margin-top: 3px;
+}
+
+.middle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bottom {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+input[type="number"] {
+  width: 50px;
+}
+
+fieldset {
+  font-weight: 600;
+}
