@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset>
@@ -23,9 +22,9 @@
             Surname:
           </label>
           <input
-           type="text"
-           name="surname"
-           id="surnameId"
+            type="text"
+            name="surname"
+            id="surnameId"
           >
         </div>
         <div class="middle">
@@ -33,20 +32,22 @@
             Name:
           </label>
           <input
-           type="text"
-           name="name"
-           id="nameId"
+            type="text"
+            name="name"
+            id="nameId"
           >
         </div>
         <div class="middle">
-          <label for="howOldId">
+          <label for="year">
             How old are you?
           </label>
           <input
-           type="number"
-           name="howOld"
-           id="howOldId"
-           max="25"
+            type="number"
+            value="12"
+            name="year-old"
+            id="year"
+            min="12"
+            max="100"
           >
         </div>
         <div class="middle">
@@ -54,9 +55,9 @@
             Full date of birth
           </label>
           <input
-           type="date"
-           name="birthday"
-           id="birthdayId"
+            type="date"
+            name="birthday"
+            id="birthdayId"
           >
         </div>
         <div class="bottom">
@@ -64,9 +65,9 @@
             I accept the term of the agreement
           </label>
           <input
-           type="checkbox"
-           name="terms"
-           id="termsId"
+            type="checkbox"
+            name="terms"
+            id="termsId"
           >
         </div>
       </fieldset>
@@ -79,9 +80,10 @@
             E-mail:
           </label>
           <input
-           type="email"
-           name="email"
-           id="emailId"
+            type="email"
+            name="email"
+            id="emailId"
+            placeholder="email@example.com"
           >
         </div>
         <div class="bottom">
@@ -89,12 +91,98 @@
             Password:
           </label>
           <input
-           type="password"
-           name="password"
-           id="passwordId"
+            type="password"
+            name="password"
+            id="passwordId"
           >
         </div>
       </fieldset>
+      <fieldset>
+        <legend>
+          An interesting fact about you!
+        </legend>
+        <div class="top">
+          Do you love cats?
+          <input
+            type="radio"
+            name="cats"
+            id="yes"
+          >
+          <label for="yes">Yes</label>
+          <input
+            type="radio"
+            name="cats"
+            id="no"
+          >
+          <label for="no">No</label>
+        </div>
+        <div class="middle">
+          <label for="colorId">
+            What is your favorite color?
+          </label>
+          <input
+            type="color"
+            name="color"
+            id="colorId"
+          >
+        </div>
+        <div class="middle">
+          <label for="bedId">
+            What time do you go to bed?
+          </label>
+          <input
+            type="time"
+            name="bed"
+            id="bedId"
+          >
+        </div>
+        <div class="middle">
+          <label for="brandId">
+            What are your favorite brand of cars?
+          </label>
+          <select
+            name="brand"
+            id="brandId"
+            multiple
+         >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </div>
+        <div class="bottom">
+          <label for="rateId">
+            How do you rate our work?
+          </label>
+          <input
+            type="range"
+            name="rate"
+            id="rateId"
+            value="0"
+          >
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Additional info
+        </legend>
+        <div class="top">
+          <label for="emailId">
+            Comments:
+          </label>
+          <textarea name="comment" id="commentId"></textarea>
+        </div>
+        <div class="bottom">
+          <label for="recommendId">
+            Would you recommend us?
+          </label>
+          <select name="recommend" id="recommendId">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </fieldset>
+      <input type="submit" value="Submit">
     </form>
   </body>
 </html>
