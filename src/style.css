@@ -15,3 +15,7 @@
 fieldset {
   margin-bottom: 20px;
 }
+
+fieldset.bottom {
+  margin-top: 20px;
+}
